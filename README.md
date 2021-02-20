@@ -22,6 +22,10 @@ Because of this, CSS may block parsing depending on the order of external style 
 
 - Not guarantee the executing sequence.
 - Executed before window `load` event.
+## <script defer>
+
+- Guarantee the executing sequence based on load sequence.
+- Executed before window `DOMContentLoaded` event.
 
 # References
 1. https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/
