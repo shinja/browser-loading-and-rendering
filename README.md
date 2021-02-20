@@ -27,5 +27,13 @@ Because of this, CSS may block parsing depending on the order of external style 
 - Guarantee the executing sequence based on load sequence.
 - Executed before window `DOMContentLoaded` event.
 
+# Preload
+
+- Chrome
+```
+Preload decouples fetching a resource from JS processing and execution. As such, preloads declared in markup are optimized in Chrome by the preload scanner. This means that in many cases, the preload will be fetched (with the indicated priority) before the HTML parser has even reached the tag. This makes it a lot more powerful than a custom preload implementation.[2]
+```
+
 # References
 1. https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/
+2. https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf
