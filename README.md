@@ -21,6 +21,7 @@ Because of this, CSS may block parsing depending on the order of external style 
 ## <script async>
 
 - Not guarantee the executing sequence.
+- Executed before window `load` event.
 
 # References
 1. https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/
